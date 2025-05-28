@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.socure.idplus.client</groupId>
+  <artifactId>java-sdk-demo</artifactId>
+  <version>1.0.5</version>
+
+  <repositories>
+    <repository>
+      <id>sdk.socure.com</id>
+      <url>https://sdk.socure.com</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.socure</groupId>
+      <artifactId>idplus-java-client</artifactId>
+      <version>1.0.5</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <mainClass>me.socure.idplus.client.demo.IdPlusClientDemo</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
